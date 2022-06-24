@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  font-size: 3rem;
+
+  h2 {
+    margin: 2rem 0;
+  }
+
+  .input_group {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    label {
+      font-size: 2rem;
+    }
+
+    input {
+      font-size: 2rem;
+      padding: 1rem 2rem 1rem 0.5rem;
+      border: none;
+      border-bottom: 2px solid gray;
+      transition: border 0.2s ease-in;
+      &:focus {
+        outline: none;
+        border-color: burlywood;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    .error {
+      color: rgb(202, 41, 41);
+      position: absolute;
+      margin-top: 7.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .checkbox {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    &-input {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  background-color: rgb(240, 204, 158);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    background-color: burlywood;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+
+  .btn {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+}
